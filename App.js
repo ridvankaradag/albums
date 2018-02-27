@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import Header from './pages/components/header';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -24,8 +25,9 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        <Header />
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          2018 First React Native App
         </Text>
         <Text style={styles.instructions}>
           To get started, edit App.js
