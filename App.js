@@ -11,7 +11,8 @@ import {
   Text,
   View
 } from 'react-native';
-import Header from './pages/components/header';
+import Header from './pages/components/Header';
+import AlbumList from './pages/components/AlbumList';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -26,6 +27,7 @@ export default class App extends Component<Props> {
     return (
       <View>
         <Header headerText={'Albums'}/>
+        <AlbumList />
       </View>
     );
   }
