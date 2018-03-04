@@ -28,9 +28,9 @@ const AlbumDetail = ({ album }) => {
                         source={{ uri: image }}
                     />
             </CardSection>
-            
+
             <CardSection>
-                <Button />
+                <Button onPress={ () => console.log(title)}/>
             </CardSection>
 
         </Card>
